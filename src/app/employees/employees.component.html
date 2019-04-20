@@ -1,0 +1,23 @@
+<div [ngClass]="{fgrid:true}">
+	<header></header>
+	<nav>
+		<a routerLink="/" routerLinkActive="active">
+			<div [ngClass]="{nav_el:true}">Главная</div>
+		</a>
+		<a routerLink="/catalog" routerLinkActive="active">
+			<div [ngClass]="{nav_el:true}">Каталог</div>
+		</a>
+		<a routerLink="/settings" routerLinkActive="active">
+			<div [ngClass]="{nav_el:true}">Настройки</div>
+		</a>
+		<a class="link" (click)="logout()">
+			<div [ngClass]="{nav_el:true}">Выход</div>
+		</a>
+	</nav>
+	<div [ngClass]="{content:true}">
+		<router-outlet></router-outlet>
+	</div>
+	<footer>
+		Evstengeev A.Z. © 2019
+	</footer>
+</div>

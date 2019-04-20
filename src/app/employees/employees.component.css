@@ -1,0 +1,44 @@
+.fgrid{
+	display:grid;
+	grid-template-columns:15rem auto;
+	max-width:1300px;
+	margin:0 auto;
+}
+header{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background:#484848;
+	height:4rem;
+	border-radius:0 0 3px 0;
+}
+.nav_el{
+	display:block;
+	background:#3a3a3a;
+	padding: 25px 30px;
+	margin-left: auto;
+	border-bottom: solid 1px #ffffff36;
+}
+.nav_el:last-child{
+	border-bottom: 0px;
+	border-radius:0 0 3px 3px;
+}
+.content{
+	background: #FFF;
+	margin:1rem 0 0 1rem;
+	border-radius:3px;
+	padding: 1rem;
+}
+footer{
+	grid-column-start:1;
+	grid-column-end:3;
+	color:#FFF;
+	text-align:right;
+	padding:1rem;
+	font-size:0.9rem;
+}
+@media screen and (max-width:1300px)
+{
+	.content{
+		margin:1rem 1rem 0 1rem;
+	}
+}
