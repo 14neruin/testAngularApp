@@ -1,4 +1,4 @@
-## Start server
+## Start App
 1) `git clone`
 2) `cd testAuthApp`
 3) `npm install`
